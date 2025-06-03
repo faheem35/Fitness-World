@@ -1,0 +1,303 @@
+
+
+.muscle-page {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.muscle-header {
+/* background: linear-gradient(120deg, #00d4ff, #0099cc); */
+background: linear-gradient(to bottom, #fff3b0, #ffc107);
+
+
+
+
+
+
+
+
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 114, 255, 0.2);
+}
+
+.muscle-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: none;
+  letter-spacing: -0.5px;
+}
+
+.muscle-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.muscle-container {
+  padding: 0 20px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Loading state */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  color: #555;
+}
+
+.loading-spinner {
+  color: #ffc107 !important;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Error state */
+.error-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  color: #555;
+}
+
+.retry-btn {
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.retry-btn:hover {
+  background-color: #005dd1;
+}
+
+/* Empty state */
+.empty-container {
+  text-align: center;
+  padding: 60px 0;
+  color: #777;
+  font-size: 1.2rem;
+}
+
+/* Workout grid */
+.workout-grid {
+  margin: 0 -15px;
+}
+
+.workout-col {
+  padding: 15px;
+}
+
+.workout-item {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.workout-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.workout-image-wrapper {
+  position: relative;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  overflow: hidden;
+  background-color: #edf2f7;
+}
+
+.workout-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.workout-item:hover .workout-image {
+  transform: scale(1.05);
+}
+
+.workout-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.workout-item:hover .workout-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.play-icon {
+  /* color: #0072ff; */
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin-left: 4px;
+}
+
+.workout-info {
+  padding: 20px;
+}
+
+.workout-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.workout-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workout-count {
+  /* background-color: #e6f0ff; */
+  background-color: white;
+  /* color: #0072ff; */
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.watch-btn {
+  background-color: transparent;
+  /* color: #0072ff; */
+  color: #ffc107;
+  /* border: 1px solid #0072ff; */
+   border: 2px solid #ffc107;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.watch-btn:hover {
+  background-color: #ffc107;
+  color: white;
+}
+
+/* Video modal */
+.video-modal .modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+}
+
+.video-modal .modal-header {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #eaeaea;
+  padding: 15px 20px;
+}
+
+.video-modal .modal-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.video-modal .modal-header .close {
+  color: #777;
+  opacity: 1;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .muscle-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .workout-col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .muscle-header {
+    padding: 40px 20px;
+  }
+  
+  .muscle-header h1 {
+    font-size: 2rem;
+  }
+  
+  .workout-col {
+    width: 100%;
+  }
+  
+  .workout-item {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}

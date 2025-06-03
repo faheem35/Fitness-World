@@ -1,0 +1,71 @@
+.navbar {
+  backdrop-filter: blur(5px);
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28230, 57, 70, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link-custom {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #e63946 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link-custom:hover i {
+  color: #e63946 !important;
+}
+
+.active-link {
+  background-color: rgba(230, 57, 70, 0.08);
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .active-link {
+    background-color: rgba(230, 57, 70, 0.12);
+  }
+
+  .active-indicator {
+    display: none;
+  }
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 57, 70, 0.3);
+  background-color: #d62839 !important;
+}
+
+.navbar-brand:hover i {
+  transform: rotate(15deg);
+  transition: transform 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.active-indicator {
+  animation: pulse 2s infinite ease-in-out;
+}
