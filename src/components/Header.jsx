@@ -110,6 +110,7 @@ import { Container, Navbar, Nav, Button } from "react-bootstrap"
 import { Link, useNavigate, useLocation } from "react-router-dom"
 import { tokenAuthContext } from "../contexts/AuthContextAPI"
 import './Header.css'
+import { toast } from "react-toastify"
 
 const Header = () => {
   const navigate = useNavigate()
@@ -130,7 +131,7 @@ const Header = () => {
   const logout = () => {
     localStorage.clear()
     setIsAuthorised(false)
-    alert("Logging out!...")
+    toast("Logging out!...")
     navigate("/")
   }
 
