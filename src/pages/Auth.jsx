@@ -1046,25 +1046,25 @@ const Auth = ({ insideRegister }) => {
                   <div className="col-12 col-md-6 mb-4">
                     <div className="d-flex align-items-start">
                       <i className="fas fa-check-circle text-danger me-2 mt-1"></i>
-                      <span>Muscles based workout plans</span>
+                      <span>Muscle-Based Workout Plans</span>
                     </div>
                   </div>
                   <div className="col-12 col-md-6 mb-4">
                     <div className="d-flex align-items-start">
                       <i className="fas fa-check-circle text-danger me-2 mt-1"></i>
-                      <span>AI Chat bot guidance</span>
+                      <span>Live Sessions with Trainers</span>
                     </div>
                   </div>
                   <div className="col-12 col-md-6 mb-4">
                     <div className="d-flex align-items-start">
                       <i className="fas fa-check-circle text-danger me-2 mt-1"></i>
-                      <span>Live sessions with Trainers</span>
+                      <span>AI Chatbot Guidance </span>
                     </div>
                   </div>
                   <div className="col-12 col-md-6 mb-4">
                     <div className="d-flex align-items-start">
                       <i className="fas fa-check-circle text-danger me-2 mt-1"></i>
-                      <span>BMI and BMR calculations</span>
+                      <span>BMI and BMR Calculations</span>
                     </div>
                   </div>
                 </div>
