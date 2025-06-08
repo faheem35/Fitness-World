@@ -84,7 +84,7 @@
 
 
 
-"use client"
+
 
 import { useState } from "react"
 import { Form, Container, Row, Col, Button } from "react-bootstrap"

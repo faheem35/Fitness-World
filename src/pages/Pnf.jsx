@@ -10,7 +10,7 @@
 
 
 
-"use client"
+
 import { Container, Row, Col, Button } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 
