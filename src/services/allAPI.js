@@ -1,5 +1,3 @@
-//all api codes here . this file name is allAPI.js
-
 import commonAPI from "./commonAPI";
 import SERVER_URL from "./serverURL";
 
